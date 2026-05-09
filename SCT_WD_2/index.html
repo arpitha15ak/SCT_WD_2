@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Professional Stopwatch</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background Glow -->
+  <div class="bg-glow glow1"></div>
+  <div class="bg-glow glow2"></div>
+
+  <!-- Main Container -->
+
+  <div class="container">
+
+    <!-- Header -->
+
+    <div class="header">
+
+      <h1>STOPWATCH</h1>
+
+      <p>
+        Interactive and professional stopwatch web application
+      </p>
+
+    </div>
+
+    <!-- Stopwatch Display -->
+
+    <div class="time-container">
+
+      <div class="time-box">
+        <span id="minutes">00</span>
+        <small>MIN</small>
+      </div>
+
+      <div class="colon">:</div>
+
+      <div class="time-box">
+        <span id="seconds">00</span>
+        <small>SEC</small>
+      </div>
+
+      <div class="colon">:</div>
+
+      <div class="time-box milli">
+        <span id="milliseconds">00</span>
+        <small>MS</small>
+      </div>
+
+    </div>
+
+    <!-- Buttons -->
+
+    <div class="buttons">
+
+      <button id="startBtn" class="start">
+        Start
+      </button>
+
+      <button id="pauseBtn" class="pause">
+        Pause
+      </button>
+
+      <button id="resetBtn" class="reset">
+        Reset
+      </button>
+
+      <button id="lapBtn" class="lap">
+        Lap
+      </button>
+
+    </div>
+
+    <!-- Lap Section -->
+
+    <div class="lap-container">
+
+      <div class="lap-header">
+
+        <h2>Lap Times</h2>
+
+        <span id="lapCount">0 Laps</span>
+
+      </div>
+
+      <ul id="lapList"></ul>
+
+    </div>
+
+  </div>
+
+  <!-- JavaScript -->
+
+  <script src="script.js"></script>
+
+</body>
+</html>
